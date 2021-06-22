@@ -49,13 +49,12 @@ jobs:
         python-version: ${{ matrix.python }}
     - run: python -mpip install --upgrade pip tox virtualenv
     - run: tox -e ${{ matrix.toxenv }}
-
     - name: Codecov coverage report upload
       uses: codecov/codecov-action@v1
       if: ${{ matrix.toxenv == 'py' }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        files: ${{github.workspace}}/coverage.xml
+        files: coverage.xml
         flags: ${{ matrix.os }}${{ matrix.python }}
         name: xlorm-tests
         fail_ci_if_error: true # optional (default = false)

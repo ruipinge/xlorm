@@ -1,3 +1,6 @@
+[![xlorm-build](https://github.com/ruipinge/xlorm/workflows/main/badge.svg)](https://github.com/ruipinge/xlorm/actions)
+[![codecov](https://codecov.io/gh/ruipinge/xlorm/branch/master/graph/badge.svg?token=MHLETEBRFF)](https://codecov.io/gh/ruipinge/xlorm)
+
 # xlorm
 
 Python library ORM over Excel files for reading data (and writing with future developments) using a dead simple API.
