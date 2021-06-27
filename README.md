@@ -9,7 +9,8 @@ Python library ORM over Excel files for reading data (and writing with future de
 ## Usage
 
 ```python
-from xlorm import BooleanColumn, DateColumn, NumberColumn, TextColumn, XLSSheetModel
+from xlorm.base import XLSSheetModel
+from xlorm.columns import BooleanColumn, DateColumn, NumberColumn, TextColumn
 
 
 class Car(XLSSheetModel):

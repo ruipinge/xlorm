@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from xlorm import BooleanColumn, DateColumn, IntegerColumn, NumberColumn, TextColumn, XLSSheetModel
+from xlorm.base import XLSSheetModel
+from xlorm.columns import BooleanColumn, DateColumn, IntegerColumn, NumberColumn, TextColumn
 
 from .helpers import from_sample
 
